@@ -2,7 +2,7 @@
     "name": "startuptask",
     "displayName": "StartupTask",
     "description": "",
-    "version": "2.0.0",
+    "version": "0.0.1",
     "publisher": "dydFreeman",
     "engines": {
         "vscode": "^1.14.0"
