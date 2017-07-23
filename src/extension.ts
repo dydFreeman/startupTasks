@@ -7,7 +7,7 @@ export function activate(context: vscode.ExtensionContext) {
     taskList.forEach((item, index) => {
         if (item.command && item.args) {
             let term = vscode.window.createTerminal("startupTask_" + index);
-            let strCmd = "node_modules\\.bin\\" + item.command + ".cmd" + " " + item.arg;
+            let strCmd = "node_modules\\.bin\\" + item.command + ".cmd" + " " + item.args;
             term.sendText(strCmd);
         }
     });
