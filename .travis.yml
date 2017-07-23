@@ -4,8 +4,6 @@ install:
 - npm install;
 
 script:  
-- npm install -g gulp;
-- gulp;
 - npm compile
 
 after_success:  
