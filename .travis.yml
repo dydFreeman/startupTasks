@@ -12,3 +12,4 @@ deploy:
   file: "*.vsix"
   on:
     repo: dydFreeman/startupTasks
+    tags: true
