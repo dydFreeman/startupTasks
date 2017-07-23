@@ -31,3 +31,7 @@ gulp.task('major', ['compile'], function() {
 gulp.task('minor', ['compile'], function() {
   return versionBump('minor');
 });
+
+gulp.task('patch', ['compile'], function() {
+  return versionBump('patch');
+});
