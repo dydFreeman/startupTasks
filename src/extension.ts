@@ -9,6 +9,7 @@ export function activate(context: vscode.ExtensionContext) {
             let term = vscode.window.createTerminal("startupTask_" + index);
             let strCmd = "node_modules\\.bin\\" + item.command + ".cmd" + " " + item.args;
             term.sendText(strCmd);
+            context.subscriptions.push(term);
         }
     });
 }
